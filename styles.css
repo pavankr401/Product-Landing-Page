@@ -1,0 +1,225 @@
+*, ::before, ::after{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  font-size: 10px;
+  background-color: hsl(240, 0%, 95%);
+}
+body{
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+
+header{
+  position: sticky;
+  top: 0;
+}
+
+nav{
+  width: 100%;
+  background-color: hsl(240, 0%, 95%);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  
+}
+
+nav img{
+  width: 30rem;
+  min-width: 90%;
+}
+nav .logo{ 
+  padding-left: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul{
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li{
+  list-style-type: none;
+  
+}
+nav a{
+  display : block;  
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form h1, form input{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+form h1{
+  font-size: 2.4rem;
+}
+
+form input{
+  width: 27rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+}
+button{
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  border:none;
+  background-color: hsl(47, 100%, 62%);
+  transition: background-color 1s;
+}
+form .btn{
+  font-weight: bold;
+  font-size: 1.6rem;
+  width: 14rem;
+  height: 3rem;
+  border:none;
+  background-color: hsl(44, 93%, 58%);
+  transition: background-color 1s;
+}
+
+button:hover, .btn:hover{
+  background-color: hsl(44, 98%, 50%);
+}
+
+#Features{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Features div{
+  width: 80rem;
+  max-width: 95%;
+  margin: 3.5rem;
+}
+
+#How-it-works div{
+  width: 65rem;
+  margin: 2rem auto;
+}
+#Pricing{
+  display:flex;
+  justify-content: center;
+  padding: 3rem;
+}
+.pricing-cards{
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 30rem;
+  height: 30rem;
+  margin: 0 1.2rem;
+  text-align: center;
+  border-radius: 2px;
+}
+.product-name{
+  background-color: hsl(240, 0%, 80%);
+  padding: 1.5rem;
+}
+.cost{
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 1.5rem;
+}
+.description{
+    height: 12rem;
+    line-height: 1.8;
+}
+
+footer{
+  width: 100rem;
+  max-width: 100%;
+  background-color: hsl(240, 0%, 90%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 2rem 0;
+}
+footer li{
+  float: left;
+  list-style-type: none;
+  padding: 0 1.5rem;
+}
+footer p{
+  font-size: 1.4rem;
+  padding: 0 1.5rem;
+}
+
+@media(max-width: 800px)
+{
+  #Pricing{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  .pricing-cards{
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 30rem;
+  height: 30rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  border-radius: 2px;
+}
+}
+
+@media (max-width: 650px){
+  nav ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+nav img{
+  width: 30rem;
+}
+nav .logo{ 
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+}
+
+@media (max-width: 600px)
+{
+  nav{
+  position: sticky;
+  top:0;
+  background-color: hsl(240, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+  nav .logo{ 
+    width: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 550px)
+{
+   
+#Features div{
+  width: 80rem;
+  max-width: 95%;
+  margin: 3.5rem;
+  text-align: center;
+}
+}
